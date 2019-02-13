@@ -28,7 +28,7 @@ AC_CHECK_FUNCS([memset])
 
 # pkgconfig
 PKG_CHECK_MODULES([OPENSSL], [openssl])
-PKG_CHECK_MODULES([LUA], [lua])
+PKG_CHECK_MODULES([LUA], [lua5.1])
 
 # lua libdir
 LUALIBDIR="`$PKGCONFIG --variable=libdir lua5.1`"
